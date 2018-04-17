@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 12px;
+	background:#f5f5f5!important;
+	background-color:#f5f5f5!important;
+}
+
+.link_btn{
+	position:absolute;
+	top:30px;
+	left:40px;
+}
+
+path.map.active:hover{
+	opacity:0.9;
+	cursor:pointer;
+}
+
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;								
+    padding: 5px;				
+    font-size: 12px;		
+    background:#000000;	
+	color:#fff;
+    border: 0px;		
+    border-radius: 3px;			
+    pointer-events: none;			
+}
+
+div.tooltip .countryDiv{
+	font-size:15px;
+	font-weight:bold;
+}
+
+#selector {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+	max-width:150px;
+    padding: 5px 10px;
+    border-color: #888;
+    color: #333;
+}
+
+#selector option {
+    padding: 5px 10px;
+}
+
+.pieChart path{
+	-webkit-transition:0.25s all;
+	transition:0.25s all;
+	cursor:pointer;
+}
+
+.pieChart path:hover{
+	 -webkit-transform:scale(1.1)!important;
+	transform:scale(1.1)!important;
+}
+
+.pieChart text{
+	cursor:pointer;
+}
