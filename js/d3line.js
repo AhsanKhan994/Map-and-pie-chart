@@ -3,10 +3,15 @@ var csv_data=null;//Global variable for each csv file data
 var csv_data_arr=[];//Global variable for csv files data array
 var div=null;//Global div variable for tooltip div 
 
+function colors_function(){
+	
+	return	["blue", "green", "red"];
+}
+
 $(document).ready(function(e) {
 
     // width and height settings
-    var width = 900;
+    var width = 910;
     var height = 500;
     var margin = {
         top: 20,
@@ -18,7 +23,7 @@ $(document).ready(function(e) {
     height = height - margin.top - margin.bottom;
 
     // colors
-    var colorLine = ["blue", "green", "red"];
+    var colorLine = colors_function();
 	
 	// Defining the tooltip div
 	div = d3.select("body").append("div")	
