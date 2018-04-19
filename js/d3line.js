@@ -8,9 +8,9 @@ function colors_function(){
 	return	["blue", "green", "red"];
 }
 
-$(document).ready(function(e) {
-
-    // width and height settings
+function vars_function(){
+	
+	    // width and height settings
     var width = 910;
     var height = 500;
     var margin = {
@@ -21,6 +21,12 @@ $(document).ready(function(e) {
     };
     width = width - margin.left - margin.right;
     height = height - margin.top - margin.bottom;
+	
+}
+
+$(document).ready(function(e) {
+
+	vars_function();
 
     // colors
     var colorLine = colors_function();
